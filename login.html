@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+
+    <div class="wrapper">
+        <div class="form-box login">
+            <h2>Login</h2>
+            <form onsubmit="return handleLogin(event);">
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" required>
+                </div>
+                <div class="remember-forgot">
+                    <a href="">Forgot Password?</a>
+                    <label class="remember-me"><input type="checkbox"> Remember me</label>
+                </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                    <p>Don't have an account? <a href="registration.html" class="register-link">Register</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); // Prevent the form from submitting the traditional way
+            // Here you can add your login logic (e.g., checking credentials)
+            
+            // For this example, we will assume the login is successful
+            window.location.href = 'options.html'; // Redirect to transport options page
+        }
+    </script>
+</body>
+</html>

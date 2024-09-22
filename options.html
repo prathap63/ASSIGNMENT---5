@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Options</title>
+    <link rel="stylesheet" href="options.css">
+</head>
+<body>
+    <div class="options-container">
+        <h1>Select Your Travel Option</h1>
+        <div class="options">
+            <div class="option">
+                <h2>Train</h2>
+                <p>Book a train ticket to your desired destination.</p>
+                <button onclick="book('Train')">Book Train</button>
+            </div>
+            <div class="option">
+                <h2>Bus</h2>
+                <p>Book a bus ticket for your journey.</p>
+                <button onclick="book('Bus')">Book Bus</button>
+            </div>
+            <div class="option">
+                <h2>Flight</h2>
+                <p>Book a flight to your chosen location.</p>
+                <button onclick="book('Flight')">Book Flight</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function book(option) {
+            alert('You have selected to book a ' + option);
+            // Here you can redirect to the respective booking page or perform booking actions
+        }
+    </script>
+</body>
+</html>
